@@ -26,6 +26,14 @@ namespace WebApplicationStudents
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                        "~/Scripts/angular.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/app/app").Include(
+                        "~/App/app.js"));
+            bundles.Add(new ScriptBundle("~/bundles/app/controllers").Include(
+                        "~/App/Controllers/*.js"));
         }
     }
 }
